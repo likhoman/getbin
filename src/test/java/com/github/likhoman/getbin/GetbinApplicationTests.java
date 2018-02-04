@@ -11,6 +11,7 @@ public class GetbinApplicationTests {
 
 	@Test
 	public void contextLoads() {
+
 	}
 
 }

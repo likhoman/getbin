@@ -7,17 +7,17 @@ import java.lang.annotation.Annotation;
 /**
  * @author Artyom Likhomanenko
  */
+@SuppressWarnings({"ClassExplicitlyAnnotation", "UnusedDeclaration"})
 public class DynamicSchedule implements Scheduled {
 
   private String cron;
   private String zone;
-  private long fixDelay;
+  private long fixDelay = -1;
   private String fixedDelayString;
-  private long fixedRate;
+  private long fixedRate = -1;
   private String fixedRateString;
-  private long initialDalay;
+  private long initialDelay = -1;
   private String initialDelayString;
-
 
   @Override
   public String cron() {
@@ -51,7 +51,7 @@ public class DynamicSchedule implements Scheduled {
 
   @Override
   public long initialDelay() {
-    return initialDalay;
+    return initialDelay;
   }
 
   @Override

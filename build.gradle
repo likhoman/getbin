@@ -34,6 +34,7 @@ dependencies {
 	compile('org.springframework.shell:spring-shell-starter:2.0.0.M2')
 	runtime('org.springframework.boot:spring-boot-devtools')
   compile 'org.codehaus.groovy:groovy-all:2.4.13'
+	compile 'org.azeckoski:reflectutils:0.9.20'
 	runtime('org.hsqldb:hsqldb')
 	compileOnly('org.projectlombok:lombok')
 	testCompile('org.springframework.boot:spring-boot-starter-test')
